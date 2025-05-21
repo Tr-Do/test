@@ -2,6 +2,7 @@
 @import url('about.css');
 @import url('grid.css');
 @import url('footer.css');
+@import url('team.css');
 
 body {
     margin: 0;
@@ -29,7 +30,7 @@ h1 {
 .nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -104,6 +105,50 @@ h1 {
     transition: opacity 0.3s;
 }
 
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    min-width: 100px;
+    z-index: 1002;
+    flex-direction: column;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1.25rem;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background: #f0f6fb;
+    color: #00a2ff;
+}
+
+/* Show dropdown when open */
+.dropdown.open .dropdown-menu {
+    display: flex;
+}
+
 /* Slide-in menu on mobile */
 @media (max-width: 600px) {
     .hamburger {
@@ -114,7 +159,7 @@ h1 {
         top: 0;
         right: 0;
         height: 100vh;
-        width: 40vw;
+        width: 50vw;
         max-width: 320px;
         background: #23272F;
         flex-direction: column;
@@ -146,6 +191,21 @@ h1 {
     .menu-overlay.active {
         display: block;
         opacity: 1;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        min-width: unset;
+        width: 100%;
+        background: transparent;
+        padding: 0;
+    }
+    .dropdown-menu a {
+        color: #fff;
+        padding-left: 2.5rem;
     }
 }
 

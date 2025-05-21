@@ -10,7 +10,7 @@
 
 .about-content {
     width: 50%;
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 2rem;
 }
 
 .about-content p {
@@ -26,9 +26,23 @@
     box-shadow: 3px 3px 8px #2e2e2e;
 }
 
+.btn {
+    padding: 1rem 2rem;
+    background-color: #2e2e2e;
+    color: #fff;
+    border: solid 1px #2e2e2e;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: solid 1px #2e2e2e;
+}
+
 @media (max-width: 900px) {
     .about-content {
-        padding: 0 0 0 2rem;
+        padding: 0 0 2rem 2rem;
     }
     
     .about-content p {
