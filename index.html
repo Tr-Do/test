@@ -10,12 +10,21 @@
     <!-- Navigation -->
     <div class="nav">
         <div class="img-container"><a href="index.html"><img src="img/acm-logo-transparent.png" alt="acm-logo-transparent"></a></div>
+        <!-- Hamburger icon -->
+        <button class="hamburger" aria-label="Open menu">
+            <!-- SVG -->
+            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="#4A5568" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+        </button>
+
         <div class="nav-links">
             <a id="active" class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="#">Team</a>
             <a class="nav-link" href="#">Resources</a>
             <a class="nav-link" href="#">JagHacks</a>
         </div>
+        <div class="menu-overlay"></div>
     </div>
 
     <!-- Hero -->
@@ -123,6 +132,69 @@
         </div>
     </div>
 
-    
+    <!-- Sub-Organization(s) -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-header">
+            <h3>Association for Computing Machinery</h3>
+            <p>At TAMUSA</p>
+            <p>
+                One University Way, San Antonio, TX 78224
+            </p>
+            <p>Email: acm@tamusa.edu</p>
+            <div class="socials">
+                <!-- Add socials here -->
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-useful-links">
+                <h3>Useful Links</h3>
+                <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div class="footer-resources">
+                <h3>Resources</h3>
+                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#">Resources</a>
+                <a class="nav-link" href="#">JagHacks</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rights">
+        <p>Designed and created by <b>Liliana Martinez</b></p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const overlay = document.querySelector('.menu-overlay');
+
+        function closeMenu() {
+            navLinks.classList.remove('open');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            overlay.classList.toggle('active');
+            if(navLinks.classList.contains('open')) {
+                document.body.style.overflow = 'hidden'; // Prevent scroll
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        overlay.addEventListener('click', closeMenu);
+
+        // Optional: Close menu on link click (mobile only)
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if(window.innerWidth <= 600) closeMenu();
+            });
+        });
+    </script>
 </body>
 </html>

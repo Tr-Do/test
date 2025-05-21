@@ -1,6 +1,7 @@
 @import url('box.css');
 @import url('about.css');
 @import url('grid.css');
+@import url('footer.css');
 
 body {
     margin: 0;
@@ -58,12 +59,13 @@ h1 {
 }
 
 .hero {
-    margin-top: 4.5rem;
+    margin-top: 4rem;
     padding: 8rem;
     background-image: url('img/hero.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom: solid 2px #00a2ff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +81,72 @@ h1 {
     margin: 0;
     color: #fff;
     font-size: 20px;
+}
+
+/* Hamburger hidden on desktop, visible on mobile */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 1101;
+}
+
+/* Overlay for mobile menu */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: rgba(30, 30, 30, 0.8);
+    z-index: 1100;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Slide-in menu on mobile */
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 40vw;
+        max-width: 320px;
+        background: #23272F;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2rem;
+        gap: 1.5rem;
+        box-shadow: -2px 0 16px rgba(0,0,0,0.15);
+        transform: translateX(100%);
+        transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+        z-index: 1102;
+    }
+    .nav-links.open {
+        transform: translateX(0%);
+    }
+    .nav-link {
+        color: #fff;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 0.1rem 1.5rem;
+        box-sizing: border-box;
+    }
+    .nav-link:hover {
+        background: #333;
+        color: #00a2ff;
+        text-decoration: none;
+    }
+    /* Overlay visible when menu open */
+    .menu-overlay.active {
+        display: block;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 430px) {
