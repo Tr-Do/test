@@ -21,6 +21,10 @@
     margin-bottom: 0;
 }
 
+.card p {
+    font-size: 14px;
+}
+
 .a {
     border-right: solid 1px #fff;
 }
@@ -31,11 +35,27 @@
 
 @media (max-width: 900px) {
     .card p {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
+    @media (max-width: 900px) {
+    .grid {
+        padding: 3rem;
+    }
+
+    .card h2 {
+        font-size: 14px;
+    }
+
+    .card p {
+        font-size: 7px;
+    }
+}
+}
+
+@media (max-width: 435px) {
     .grid {
         grid-template-columns: 1fr;
         padding: 1rem;
@@ -43,5 +63,13 @@
 
     .card {
         border: none;
+    }
+
+    .card h2 {
+        font-size: 25px;
+    }
+
+    .card p {
+        font-size: 12px;
     }
 }
