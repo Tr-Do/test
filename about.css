@@ -27,11 +27,12 @@
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.8rem;
     background-color: #2e2e2e;
     color: #fff;
     border: solid 1px #2e2e2e;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .btn:hover {
