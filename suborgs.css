@@ -1,8 +1,8 @@
-.about {
+.suborgs {
     width: 100%;
 }
 
-.about-section {
+.suborg {
     margin: 1rem;
     display: flex;
     flex-direction: column;
@@ -10,28 +10,29 @@
     align-items: center;
 }
 
-.about-img-container {
+.suborg-img-container {
     width: 100%;
 }
 
-.about-img-container img {
+.suborg-img-container img {
     width: 100%;
     height: auto;
 }
 
-.about-content h2 {
+.suborg-content {
+    margin: 1rem;
+}
+
+.suborg-content h2 {
     color: #fff;
 }
 
 @media (min-width: 600px) {
-    .about-section {
+    .suborg {
+        margin: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-    }
-
-    .about-content {
-        margin: 1rem;
     }
 }

@@ -1,75 +1,35 @@
 .grid {
-    padding: 5rem;
-    background-color: #919191;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
     width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+    background-color: #fff;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    align-items: center;
+    align-self: start;
 }
 
-.card h2 {
-    color: #fff;
-    margin-bottom: 0;
+.box {
+    margin: 1rem;
+    text-align: center;
 }
 
-.card p {
-    font-size: 14px;
+.box h3 {
+    margin: 0;
+    font-size: 20px;
 }
 
-.a {
-    border-right: solid 1px #fff;
+.box p {
+    color: #000;
 }
 
-.b {
-    border-bottom: solid 1px #fff;
-}
-
-@media (max-width: 900px) {
-    .card p {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 600px) {
-    @media (max-width: 900px) {
-    .grid {
-        padding: 3rem;
+@media (min-width: 600px) {
+    .grid-section {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .card h2 {
-        font-size: 14px;
-    }
-
-    .card p {
-        font-size: 7px;
-    }
-}
-}
-
-@media (max-width: 435px) {
-    .grid {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-
-    .card {
-        border: none;
-    }
-
-    .card h2 {
-        font-size: 25px;
-    }
-
-    .card p {
-        font-size: 12px;
+    .box {
+        margin: 5rem;
     }
 }
