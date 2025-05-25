@@ -19,6 +19,10 @@
     height: auto;
 }
 
+.about-content {
+    margin: 1rem;
+}
+
 .about-content h2 {
     color: #fff;
 }

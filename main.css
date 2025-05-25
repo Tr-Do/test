@@ -34,7 +34,7 @@ body {
 
 /* Buttons */
 .btn {
-    width: 400px;
+    width: 350px;
     padding: 1rem 2rem;
     color: #fff;
     background-color: #00a2ff;
@@ -45,4 +45,10 @@ body {
 .btn:hover {
     background-color: transparent;
     border: solid 1px #00a2ff;
+}
+
+@media (max-width: 350px) {
+    .btn {
+        width: 300px;
+    }
 }
