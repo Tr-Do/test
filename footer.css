@@ -30,14 +30,13 @@
 
 .socials a {
     padding: 0.5rem;
-    background-color: #00a2ff;
     border-radius: 50%;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .socials a:hover {
-    background-color: #9c9c9c;
+    box-shadow: 2px 2px 7px #000;
 }
 
 .footer-links {
@@ -64,6 +63,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+}
+
+.useful-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.useful-links a:hover {
+    color: #00a2ff;
+    text-decoration: underline;
+}
+
+.resource-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.resource-links a:hover {
+    color: #00a2ff;
+    text-decoration: underline;
 }
 
 .footer-links-content h2 {
