@@ -28,7 +28,7 @@
     color: #fff;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1040px) {
     .suborg {
         margin: 1rem;
         display: flex;
