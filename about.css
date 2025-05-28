@@ -12,6 +12,7 @@
 
 .about-img-container {
     width: 100%;
+    max-width: 800px;
 }
 
 .about-img-container img {
@@ -37,5 +38,6 @@
 
     .about-content {
         margin: 1rem;
+        max-width: 800px;
     }
 }
