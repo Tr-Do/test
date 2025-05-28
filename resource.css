@@ -22,7 +22,7 @@
     margin: 1rem;
 }
 
-.resource-content h2 {
+.resource-content h2, p, li {
     color: #fff;
 }
 
