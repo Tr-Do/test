@@ -28,8 +28,13 @@ b {
 }
 
 .hero-content {
-    padding: 1rem;
+    margin: 1rem;
+    padding: 3rem;
     text-align: start;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(5px);
 }
 
 .hero-content h1, p {
@@ -39,7 +44,7 @@ b {
 
 /* Buttons */
 .btn {
-    width: 350px;
+    width: 325px;
     padding: 1rem 2rem;
     color: #fff;
     background-color: #00a2ff;

@@ -36,13 +36,7 @@
 
 .socials a {
     padding: 0.5rem;
-    border-radius: 50%;
     text-align: center;
-    transition: box-shadow 0.3s ease;
-}
-
-.socials a:hover {
-    box-shadow: 2px 2px 7px #000;
 }
 
 .footer-links-content {
