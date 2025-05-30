@@ -10,8 +10,13 @@
     align-items: center;
 }
 
+.suborg-subsection {
+    margin: 1rem;
+}
+
 .suborg-img-container {
     width: 100%;
+    max-width: 500px;
 }
 
 .suborg-img-container img {
@@ -27,12 +32,16 @@
     color: #fff;
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 1020px) {
     .suborg {
         margin: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+
+    .suborg-content {
+        max-width: 800px;
     }
 }
