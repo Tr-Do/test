@@ -95,6 +95,10 @@
     text-align: center;
 }
 
+.rights b {
+    color: #fff;
+}
+
 @media (min-width: 600px) {
     .footer-socials,
     .footer-links {

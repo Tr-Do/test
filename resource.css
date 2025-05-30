@@ -11,7 +11,7 @@
 
 .resource-img-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
 }
 
 .resource-img-container img {
@@ -21,11 +21,15 @@
 
 .resource-content {
     margin: 1rem;
-    max-width: 800px;
+    padding: 1rem;
+    max-width: 560px;
+    border: solid 1px #fff;
+    border-radius: 20px;
 }
 
 .resource-content h2 {
     color: #fff;
+    margin-top: 0;
 }
 
 @media (min-width: 600px) {
@@ -34,7 +38,7 @@
     }
 
     .resource {
-        margin: 3.5rem;
+        margin: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;

@@ -4,6 +4,7 @@
 @import url('suborgs.css');
 @import url('resource.css');
 @import url('footer.css');
+@import url('team.css');
 
 body {
     margin: 0;
@@ -48,17 +49,21 @@ li {
 
 /* Buttons */
 .btn {
+    font-family: 'Poppins', sans-serif;
     width: 325px;
     padding: 1rem 2rem;
     color: #fff;
     background-color: #00a2ff;
     border: solid 1px #00a2ff;
+    border-radius: 25px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .btn:hover {
     background-color: transparent;
     border: solid 1px #00a2ff;
+    color: #00a2ff;
 }
 
 @media (max-width: 435px) {
