@@ -16,6 +16,10 @@ b {
     color: #74ccff;
 }
 
+li {
+    color: #fff;
+}
+
 .hero {
     height: 600px;
     background-image: url('img/hero.jpg');
