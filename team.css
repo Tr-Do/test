@@ -20,7 +20,7 @@
 .members {
     margin: 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@
     align-items: center;
 }
 
-.socials {
+.member-socials {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,11 +74,5 @@
     .vip-members,
     .members {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 900px) {
-    .members {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
