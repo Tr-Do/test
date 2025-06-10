@@ -13,6 +13,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
 b {
     color: #74ccff;
 }
@@ -50,6 +58,7 @@ li {
 /* Buttons */
 .btn {
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     width: 325px;
     margin: 0.5rem;
     padding: 1rem 2rem;
@@ -69,6 +78,28 @@ li {
     transform: scale(1.02);
 }
 
+.btn-outline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 325px;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    color: #00a2ff;
+    background-color: transparent;
+    border: solid 1px #00a2ff;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background-color: #00a2ff;
+    border: solid 1px #00a2ff;
+    color: #fff;
+    transform: scale(1.02);
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
@@ -76,11 +107,7 @@ li {
     align-items: center;
 }
 
-@media (max-width: 435px) {
-    .btn {
-        font-size: 16px;
-    }
-
+@media (max-width: 545px) {
     .buttons {
         display: flex;
         flex-direction: column;
