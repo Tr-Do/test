@@ -1,5 +1,12 @@
 # ACM-TAMUSA Website
+
+<p align="center">
+  <img height="200px" src="https://lilimartinez23.github.io/acm/img/acm-logo-transparent.png" />
+</p>
+
 Welcome to ACM-TAMUSA's Website Repository! This repository houses all of the code for ACM-TAMUSA's website. 
+
+
 ## Table of Contents
 
 - [About ACM-TAMUSA](#about-acm-tamusa)
