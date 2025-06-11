@@ -24,7 +24,7 @@
 .about-img-container {
     margin: 0.5rem;
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
 }
 
 .about-img-container img {
@@ -67,7 +67,24 @@
 }
 
 @media (min-width: 1025px) {
+    .about-section {
+        margin: 2rem 5rem;
+    }
+
     .about-content {
-        padding: 5rem;
+        padding: 3rem;
+    }
+
+    .about-socials {
+        padding: 0.3rem 1rem;
+        background-color: #00a2ff;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-socials a {
+        margin: 0.25rem 0.5rem;
     }
 }

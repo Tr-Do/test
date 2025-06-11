@@ -27,6 +27,15 @@
     font-size: 16px;
 }
 
+.footer-socials a {
+    color: #00a2ff;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    text-decoration: underline;
+}
+
 .socials {
     margin: 1rem;
     display: grid;
