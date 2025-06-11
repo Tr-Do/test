@@ -4,16 +4,13 @@
 
 .about-section {
     margin: 0.5rem;
+    padding: 1rem;
+    border: solid 1px #fff;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.about-content {
-    padding: 1rem;
-    border: solid 1px #fff;
-    border-radius: 20px;
 }
 
 .about-content h2 {
@@ -22,14 +19,14 @@
 }
 
 .about-img-container {
-    margin: 0.5rem;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .about-img-container img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .about-subsection {

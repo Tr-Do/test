@@ -4,16 +4,13 @@
 
 .suborg {
     margin: 0.5rem;
+    padding: 1rem;
+    border: solid 1px #fff;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.suborg-content {
-    padding: 1rem;
-    border: solid 1px #fff;
-    border-radius: 20px;
 }
 
 .suborg-content h2 {
@@ -22,14 +19,14 @@
 }
 
 .suborg-img-container {
-    margin: 0.5rem;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .suborg-img-container img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .suborg-subsection {
