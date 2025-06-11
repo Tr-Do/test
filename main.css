@@ -65,7 +65,7 @@ li {
     color: #fff;
     background-color: #00a2ff;
     border: solid 1px #00a2ff;
-    border-radius: 25px;
+    border-radius: 5px;
     font-weight: 700;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -87,7 +87,7 @@ li {
     color: #00a2ff;
     background-color: transparent;
     border: solid 1px #00a2ff;
-    border-radius: 25px;
+    border-radius: 5px;
     font-weight: 700;
     transition: transform 0.3s ease;
     cursor: pointer;
