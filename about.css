@@ -26,6 +26,7 @@
 .about-img-container img {
     width: 100%;
     height: auto;
+    box-shadow: 3px 3px #00a2ff;
     border-radius: 5px;
 }
 

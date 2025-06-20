@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+.resources-title {
+    color: #fff;
+    text-align: center;
+}
+
 .resource {
     margin: 1rem;
 }
@@ -17,6 +22,7 @@
 .resource-img-container img {
     width: 100%;
     height: auto;
+    box-shadow: 3px 3px #fff;
     border-radius: 5px;
 }
 

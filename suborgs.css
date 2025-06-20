@@ -21,11 +21,13 @@
 .suborg-img-container {
     width: 100%;
     max-width: 600px;
+    
 }
 
 .suborg-img-container img {
     width: 100%;
     height: auto;
+    box-shadow: 3px 3px #fff;
     border-radius: 5px;
 }
 
