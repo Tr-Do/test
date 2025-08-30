@@ -55,22 +55,22 @@
 }
 
 .one {
-    
-    background-image: url('img/news-3.jpg');
+
+    background-image: url('../img/news-3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .two {
-    background-image: url('img/news-2.jpg');
+    background-image: url('../img/news-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .three {
-    background-image: url('img/news-1.jpg');
+    background-image: url('../img/news-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,13 +78,13 @@
 
 @media (max-width: 765px) {
     .news-row {
-       grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 545px) {
     .news-row {
-       grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .news-card,

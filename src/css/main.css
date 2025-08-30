@@ -32,7 +32,7 @@ li {
 
 .hero {
     height: 600px;
-    background-image: url('img/hero.jpg');
+    background-image: url('../img/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,8 @@ li {
     backdrop-filter: blur(5px);
 }
 
-.hero-content h1, p {
+.hero-content h1,
+p {
     color: #fff;
     margin: 0;
 }
