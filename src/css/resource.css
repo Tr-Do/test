@@ -8,6 +8,7 @@
 .resources-title {
     color: #fff;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .resource {
@@ -27,7 +28,7 @@
 }
 
 .resource-content {
-    margin: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
     max-width: 560px;
 }
@@ -43,7 +44,6 @@
     }
 
     .resource {
-        margin: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;

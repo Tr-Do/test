@@ -1,0 +1,91 @@
+.team-title {
+    margin-top: 5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.team {
+    width: 100%;
+}
+
+.members {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.member {
+    margin: 0;
+    padding: 0;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.member h2 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.member-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-button a {
+    color: #00a2ff;
+    text-decoration: none;
+}
+
+.member-button a:hover {
+    text-decoration: underline;
+}
+
+.member-img-container {
+    width: 40%;
+    max-width: 150px;
+    height: auto;
+    padding: 3.5rem;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+.member-img-container img {
+    width: 100%;
+}
+
+@media (max-width: 915px) {
+    .member-img-container {
+        width: 50%;
+    }
+    .members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    
+
+    .members {
+        grid-template-columns: 1fr;
+    }
+}

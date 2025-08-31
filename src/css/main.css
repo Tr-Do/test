@@ -30,6 +30,7 @@ li {
     color: #fff;
 }
 
+
 .hero {
     height: 600px;
     background-image: url('../img/hero.jpg');
@@ -39,12 +40,13 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3.5rem;
 }
 
 .hero-content {
     margin: 1rem;
     padding: 3rem;
-    text-align: start;
+    text-align: center;
     border: solid 1px #fff;
     border-radius: 5px;
     background: transparent;
@@ -54,7 +56,17 @@ li {
 .hero-content h1,
 p {
     color: #fff;
-    margin: 0;
+    margin: 1;
+}
+
+.useful-links a {
+    margin-left: 0.25rem;
+    margin: 0.25rem;
+}
+
+.resource-links a {
+    margin-left: 0.25rem;
+    margin: 0.25rem;
 }
 
 /* Buttons */
