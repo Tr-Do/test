@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const { Calendar } = window.VanillaCalendarPro;
+    const calendar = new Calendar('#calendar');
+    calendar.init();
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const resourcesDropdown = document.querySelector('.dropdown');
     const resourcesLink = document.getElementById('resources-link');

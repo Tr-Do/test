@@ -15,7 +15,15 @@
         {{ content | safe }}
     </main>
     {% include 'footer.njk' %}
+
     <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const { Calendar } = window.VanillaCalendarPro;
+            const cal = new Calendar('#calendar');
+            cal.init();
+        });
+    </script>
     <script src="/js/script.js" defer></script>
 </body>
 
