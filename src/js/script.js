@@ -1,10 +1,3 @@
-import { Calendar } from 'vanilla-calendar-pro';
-import 'vanilla-calendar-pro/styles/index.css';
-
-// Initialize the calendar
-const calendar = new Calendar('#calendar');
-calendar.init();
-
 document.addEventListener('DOMContentLoaded', function () {
     const resourcesDropdown = document.querySelector('.dropdown');
     const resourcesLink = document.getElementById('resources-link');
