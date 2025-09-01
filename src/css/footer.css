@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid black;
 }
 
 .footer-socials,
@@ -111,6 +112,7 @@
 }
 
 @media (min-width: 600px) {
+
     .footer-socials,
     .footer-links {
         width: 100%;

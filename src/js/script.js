@@ -1,3 +1,17 @@
+import 'vanilla-calendar-pro/styles/index.css';
+import VanillaCalendar from 'vanilla-calendar-pro';
+
+document.addEventListener('DOMContentLoaded', () => {
+    const calendar = new VanillaCalendar('#calendar', {
+        settings: {
+            lang: 'en',
+            iso8601: true,
+        },
+    });
+    calendar.init();
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const { Calendar } = window.VanillaCalendarPro;
     const calendar = new Calendar('#calendar');

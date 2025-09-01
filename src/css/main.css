@@ -6,8 +6,7 @@
 @import url('footer.css');
 @import url('team.css');
 @import url('news.css');
-@import url("vanilla-calendar-pro/styles/layout.css");
-@import url("vanilla-calendar-pro/styles/themes/light.css");
+@import url('calendar.overrides.css');
 
 body {
     margin: 0;
