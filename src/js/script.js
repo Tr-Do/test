@@ -1,113 +1,103 @@
-import 'vanilla-calendar-pro/styles/index.css';
-import VanillaCalendar from 'vanilla-calendar-pro';
+(function () {
+    function start() {
+        const el = document.getElementById('calendar');
+        const lib = window.VanillaCalendarPro;
+        if (!el || !lib) return;
+        if (el.__vc_instance) return;
+        const { Calendar } = lib;
+        const cal = new Calendar('#calendar');
+        cal.init();
+        el.__vc_instance = cal;
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', start);
+    } else {
+        start();
+    }
+    window.addEventListener('load', start);
+})();
+
+
+(function () {
+    const nav = document.querySelector('.nav');
+    if (!nav) return;
+
+    const THRESHOLD = 50;
+    const apply = () => nav.classList.toggle('scrolled', window.scrollY > THRESHOLD);
+
+    apply();
+    window.addEventListener('scroll', apply, { passive: true });
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
-    const calendar = new VanillaCalendar('#calendar', {
-        settings: {
-            lang: 'en',
-            iso8601: true,
-        },
-    });
-    calendar.init();
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const { Calendar } = window.VanillaCalendarPro;
-    const calendar = new Calendar('#calendar');
-    calendar.init();
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const resourcesDropdown = document.querySelector('.dropdown');
-    const resourcesLink = document.getElementById('resources-link');
     const navLinks = document.querySelector('.nav-links');
     const hamburger = document.querySelector('.hamburger');
     const overlay = document.querySelector('.menu-overlay');
+    const resourcesDropdown = document.querySelector('.dropdown');
+    const resourcesLink = document.getElementById('resources-link');
     const mobileBreakpoint = 600;
 
     if (resourcesDropdown && resourcesLink) {
-        resourcesLink.addEventListener('click', function (e) {
-            // On mobile, only open dropdown if menu is open
+        resourcesLink.addEventListener('click', (e) => {
+            e.preventDefault();
             if (window.innerWidth <= mobileBreakpoint) {
-                e.preventDefault();
-                if (navLinks.classList.contains('open')) {
+                if (navLinks && navLinks.classList.contains('open')) {
                     resourcesDropdown.classList.toggle('open');
                 }
             } else {
-                // On desktop, open/close dropdown
-                e.preventDefault();
                 resourcesDropdown.classList.toggle('open');
             }
         });
 
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function (e) {
-            // Only close if NOT clicking inside dropdown or resources link
+        document.addEventListener('click', (e) => {
             if (!resourcesDropdown.contains(e.target) && e.target !== resourcesLink) {
                 resourcesDropdown.classList.remove('open');
             }
         });
     }
 
-    // Hamburger/menu logic
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        overlay.classList.toggle('active');
-        if (navLinks.classList.contains('open')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-            // Always close dropdown if main nav closes (mobile)
-            if (window.innerWidth <= mobileBreakpoint) {
-                resourcesDropdown.classList.remove('open');
-            }
-        }
-    });
-
-    overlay.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        overlay.classList.remove('active');
-        document.body.style.overflow = '';
-        if (window.innerWidth <= mobileBreakpoint) {
-            resourcesDropdown.classList.remove('open');
-        }
-    });
-
-    // Close menu on link click (mobile only)
-    navLinks.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', function (e) {
-            // If this is the resources link, just toggle the dropdown and stop here
-            if (this.id === 'resources-link') {
-                e.preventDefault(); // Already handled in dropdown logic
-                return;
-            }
-            if (window.innerWidth <= mobileBreakpoint) {
-                navLinks.classList.remove('open');
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
+    if (hamburger && navLinks && overlay) {
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+            if (window.innerWidth <= mobileBreakpoint && resourcesDropdown) {
                 resourcesDropdown.classList.remove('open');
             }
         });
-    });
 
-    // Make sure dropdown closes on resize
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > mobileBreakpoint) {
+        overlay.addEventListener('click', () => {
             navLinks.classList.remove('open');
             overlay.classList.remove('active');
             document.body.style.overflow = '';
-            resourcesDropdown.classList.remove('open');
-        }
-    });
+            if (window.innerWidth <= mobileBreakpoint && resourcesDropdown) {
+                resourcesDropdown.classList.remove('open');
+            }
+        });
 
-    // Scroll
-    window.addEventListener('scroll', () => {
-        const nav = document.querySelector('.nav');
-        if (window.scrollY > 50) {
-            nav.classList.add('scrolled');
-        } else {
-            nav.classList.remove('scrolled');
-        }
-    })
+        navLinks.querySelectorAll('.nav-link').forEach((link) => {
+            link.addEventListener('click', function (e) {
+                if (this.id === 'resources-link') {
+                    e.preventDefault();
+                    return;
+                }
+                if (window.innerWidth <= mobileBreakpoint) {
+                    navLinks.classList.remove('open');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                    if (resourcesDropdown) resourcesDropdown.classList.remove('open');
+                }
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > mobileBreakpoint) {
+                navLinks.classList.remove('open');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                if (resourcesDropdown) resourcesDropdown.classList.remove('open');
+            }
+        });
+    }
 });

@@ -8,7 +8,7 @@
 .calendar-section {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
     align-items: start;
     justify-items: center;
     padding: 4rem 2rem 0 2rem;
@@ -26,13 +26,14 @@
     width: 100%;
     max-width: none;
     border: 1px solid black;
+
 }
 
 .events-col {
     background: #141414;
     color: #fff;
     border-radius: 16px;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.5rem;
 }
 
 .events-title {
@@ -93,8 +94,7 @@
     .calendar-section {
         grid-template-columns: minmax(360px, 520px) minmax(520px, 720px);
         justify-items: stretch;
-        justify-content: space-between;
-        column-gap: 5rem;
+        justify-content: space-around;
     }
 
     .events-col,

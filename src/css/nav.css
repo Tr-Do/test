@@ -1,4 +1,3 @@
-/* Navigation */
 .nav {
     position: fixed;
     top: 0;
@@ -8,12 +7,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: transparent;
+    align-items: center;
+    background: transparent;
+    transition: background-color .3s ease, box-shadow .3s ease;
 }
 
 .nav.scrolled {
-    background-color: #111;
-    transition: background-color 0.3s ease;
+    background: #000 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
 }
 
 .nav-links {
@@ -21,10 +22,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
-
-#active {
-    font-weight: 700;
 }
 
 .nav-link {
@@ -38,6 +35,14 @@
     text-decoration: underline;
 }
 
+.nav.scrolled .nav-link {
+    color: #fff !important;
+}
+
+#active {
+    font-weight: 700;
+}
+
 .img-container {
     width: 4%;
 }
@@ -48,7 +53,6 @@
     padding: 0.5rem;
 }
 
-/* Hamburger hidden on desktop, visible on mobile */
 .hamburger {
     display: none;
     background: none;
@@ -58,21 +62,18 @@
     z-index: 1101;
 }
 
-/* Overlay for mobile menu */
 .menu-overlay {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100vw;
     height: 100vh;
     background: #1e1e1ecc;
     z-index: 1100;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity .3s;
 }
 
-/* Dropdown Menu */
 .dropdown {
     position: relative;
 }
@@ -90,7 +91,7 @@
     top: 100%;
     background: #fff;
     border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .06);
     border-radius: 0.5rem;
     padding: 0.5rem 0;
     min-width: 100px;
@@ -108,7 +109,7 @@
     color: #000;
     text-decoration: none;
     white-space: nowrap;
-    transition: background 0.2s;
+    transition: background .2s;
 }
 
 .dropdown-menu a:hover {
@@ -140,9 +141,9 @@
         align-items: flex-start;
         padding-top: 2rem;
         gap: 1.5rem;
-        box-shadow: -2px 0 16px rgba(0, 0, 0, 0.15);
+        box-shadow: -2px 0 16px rgba(0, 0, 0, .15);
         transform: translateX(100%);
-        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform .35s cubic-bezier(.4, 0, .2, 1);
         z-index: 1102;
     }
 
@@ -164,13 +165,11 @@
         text-decoration: none;
     }
 
-    /* Overlay visible when menu open */
     .menu-overlay.active {
         display: block;
         opacity: 1;
     }
 
-    /* Dropdown Menu */
     .dropdown-menu {
         position: static;
         box-shadow: none;

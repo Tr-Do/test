@@ -36,7 +36,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .news-mini-card:hover {
@@ -48,7 +48,8 @@
 .news-title h3 {
     padding: 0.05rem 3.5rem;
     color: #000;
-    background-color: #fff;
+    background-color: #a19f9f;
+    border-radius: 20px;
 }
 
 .news-content {

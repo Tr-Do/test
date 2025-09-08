@@ -1,3 +1,15 @@
+h2 {
+    color: white !important;
+}
+
+.text-center img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
 .team-title {
     margin-top: 5rem;
     text-align: center;
@@ -6,25 +18,6 @@
 
 .team {
     width: 100%;
-}
-
-.members {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.member {
-    margin: 0;
-    padding: 0;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .member h2 {
@@ -77,13 +70,14 @@
     .member-img-container {
         width: 50%;
     }
+
     .members {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    
+
 
     .members {
         grid-template-columns: 1fr;
