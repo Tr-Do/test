@@ -66,6 +66,33 @@ h2 {
     width: 100%;
 }
 
+.member-menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: none;
+    z-index: 10;
+}
+
+.member:hover .member-menu {
+    display: block;
+}
+
+.member-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0.25rem 0;
+}
+
+.member-menu a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 915px) {
     .member-img-container {
         width: 50%;
