@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js" defer></script>
 </head>
 
-<body>
+<body class="p-0 bg-dark">
     {% include 'navbar.njk' %}
     <main>
         {{ content | safe }}
@@ -22,8 +22,8 @@
 
     <script defer>
         document.addEventListener('DOMContentLoaded', () => {
-            const { Calendar } = window.VanillaCalendarPro; // CDN exposes this global
-            const cal = new Calendar('#calendar'); // settings optional
+            const { Calendar } = window.VanillaCalendarPro;
+            const cal = new Calendar('#calendar');
             cal.init();
         });
     </script>

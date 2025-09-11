@@ -9,72 +9,78 @@
         "name": "Julian Spindola",
         "role": "President",
         "email": "jspin01@jaguar.tamu.edu",
-        "img": "/img/team/1.jpg"
+        "img": "/img/team/president.jpg"
     },
     {
         "name": "Mariana Lozano",
         "role": "Vice President",
         "email": "mloza019@jaguar.tamu.edu",
-        "img": "/img/team/2.jpg"
+        "img": "/img/team/vp.jpg"
+    },
+    {
+        "name": "N/A",
+        "role": "Secretary",
+        "email": "N/A",
+        "img": "/img/team/jaguar_head.png"
     },
     {
         "name": "Hugo Padilla",
         "role": "Treasurer",
         "email": "hpadi02@jaguar.tamu.edu",
-        "img": "/img/team/4.jpg"
+        "img": "/img/team/treasurer.jpg"
     },
     {
         "name": "Alexis Parson",
         "role": "Compliance/Constitution Officer",
         "email": "apars03@jaguar.tamu.edu",
-        "img": "/img/team/5.jpg"
+        "img": "/img/team/compliance.jpg"
     },
     {
         "name": "Trieu Do",
         "role": "Director of Operations",
         "email": "tdo02@jaguar.tamu.edu",
-        "img": "tdo02@jaguar.tamu.edu"
+        "img": "/img/team/operation.jpg"
     },
     {
         "name": "Liliana Martinez",
         "role": "Fundraising Director",
         "email": "lmart0151@jaguar.tamu.edu",
-        "img": "/img/team/7.jpg"
+        "img": "/img/team/fundraising.jpg"
     },
     {
         "name": "Kevin Hernandez",
         "role": "Marketing Officer",
         "email": "khern0110@jaguar.tamu.edu",
-        "img": "/img/team/8.jpg"
+        "img": "/img/team/marketing1.jpg"
     },
     {
         "name": "Eric Gerner",
         "role": "Marketing Officer",
         "email": "egern01@jaguar.tamu.edu",
-        "img": "/img/team/9.jpg"
+        "img": "/img/team/marketing2.jpg"
     },
     {
         "name": "Lorenzo Sosa",
         "role": "Outreach Coordinator",
         "email": "lsosa08@jaguar.tamu.edu",
-        "img": "/img/team/10.jpg"
+        "img": "/img/team/outreach.jpg"
     },
     {
         "name": "Hawaau Adisa",
         "role": "Recruitment Retention Officer",
         "email": "hadis01@jaguar.tamu.edu",
-        "img": "/img/team/11.jpg"
+        "img": "/img/team/recruitment.jpg"
     },
     {
         "name": "Aby Babu Alappat",
         "role": "Risk Management Officer",
         "email": "a01@jaguar.tamu.edu",
-        "img": "/img/team/12.jpg"
+        "img": "/img/team/riskmng.jpg"
     },
     {
         "name": "Isabel Villarreal",
         "role": "Travel Coordinator",
         "email": "ivill018@jaguar.tamu.edu",
-        "img": "/img/team/13.jpg"
+        "img": "/img/team/travel.jpg"
     }
 ]

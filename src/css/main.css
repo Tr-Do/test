@@ -9,9 +9,6 @@
 @import url('calendar.overrides.css');
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #111111;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -31,33 +28,16 @@ li {
     color: #fff;
 }
 
-
 .hero {
     height: 600px;
     background-image: url('../img/hero.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.5rem;
 }
 
 .hero-content {
-    margin: 1rem;
-    padding: 3rem;
-    text-align: center;
-    border: solid 1px #fff;
-    border-radius: 5px;
-    background: transparent;
     backdrop-filter: blur(5px);
-}
-
-.hero-content h1,
-p {
-    color: #fff;
-    margin: 1;
 }
 
 .useful-links a {
