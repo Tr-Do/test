@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Brandon Earwood",
+        "role": "Faculty Advisor",
+        "email": "bearwood@tamusa.edu",
+        "img": "/img/team/jaguar_head.png"
+    },
+    {
+        "name": "Julian Spindola",
+        "role": "President",
+        "email": "jspin01@jaguar.tamu.edu",
+        "img": "/img/team/1.jpg"
+    },
+    {
+        "name": "Mariana Lozano",
+        "role": "Vice President",
+        "email": "mloza019@jaguar.tamu.edu",
+        "img": "/img/team/2.jpg"
+    },
+    {
+        "name": "Hugo Padilla",
+        "role": "Treasurer",
+        "email": "hpadi02@jaguar.tamu.edu",
+        "img": "/img/team/4.jpg"
+    },
+    {
+        "name": "Alexis Parson",
+        "role": "Compliance/Constitution Officer",
+        "email": "apars03@jaguar.tamu.edu",
+        "img": "/img/team/5.jpg"
+    },
+    {
+        "name": "Trieu Do",
+        "role": "Director of Operations",
+        "email": "tdo02@jaguar.tamu.edu",
+        "img": "tdo02@jaguar.tamu.edu"
+    },
+    {
+        "name": "Liliana Martinez",
+        "role": "Fundraising Director",
+        "email": "lmart0151@jaguar.tamu.edu",
+        "img": "/img/team/7.jpg"
+    },
+    {
+        "name": "Kevin Hernandez",
+        "role": "Marketing Officer",
+        "email": "khern0110@jaguar.tamu.edu",
+        "img": "/img/team/8.jpg"
+    },
+    {
+        "name": "Eric Gerner",
+        "role": "Marketing Officer",
+        "email": "egern01@jaguar.tamu.edu",
+        "img": "/img/team/9.jpg"
+    },
+    {
+        "name": "Lorenzo Sosa",
+        "role": "Outreach Coordinator",
+        "email": "lsosa08@jaguar.tamu.edu",
+        "img": "/img/team/10.jpg"
+    },
+    {
+        "name": "Hawaau Adisa",
+        "role": "Recruitment Retention Officer",
+        "email": "hadis01@jaguar.tamu.edu",
+        "img": "/img/team/11.jpg"
+    },
+    {
+        "name": "Aby Babu Alappat",
+        "role": "Risk Management Officer",
+        "email": "a01@jaguar.tamu.edu",
+        "img": "/img/team/12.jpg"
+    },
+    {
+        "name": "Isabel Villarreal",
+        "role": "Travel Coordinator",
+        "email": "ivill018@jaguar.tamu.edu",
+        "img": "/img/team/13.jpg"
+    }
+]
