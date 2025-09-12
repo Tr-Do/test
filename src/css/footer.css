@@ -6,8 +6,9 @@
     font-size: 22px;
 }
 
-.footer-socials p {
-    font-size: 16px;
+.footer-socials p,
+.footer-links-content h2 {
+    font-size: 18px;
 }
 
 .footer-socials a {
@@ -41,10 +42,6 @@
 .resource-links a:hover {
     color: #00a2ff;
     text-decoration: underline;
-}
-
-.footer-links-content h2 {
-    font-size: 18px;
 }
 
 .footer-img-container {
