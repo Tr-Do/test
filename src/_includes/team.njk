@@ -4,12 +4,19 @@
         <div class="col-12 col-lg-4">
             <div class="member position-relative text-center">
                 <img src="{{i.img | url}}" alt="" class="rounded-circle">
-                <h2 class="h4 mt-3 mb-1">{{i.name}}</h2>
+                <h2 class="h4 text-white mt-3 mb-1">{{i.name}}</h2>
                 <p class="text-secondary mb-1">{{i.role}}</p>
                 <a href="mailto:{{i.email}}">{{i.email}}</a>
-                <div class="member-menu">
-                    <img src="/img/team/2.png" alt="">
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="sideMenuLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    </div>
                 </div>
+
             </div>
         </div>
         {% endfor %}

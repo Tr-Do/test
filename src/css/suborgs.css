@@ -3,6 +3,7 @@
 }
 
 .suborg-img-container img {
+    width: 100%;
     box-shadow: 3px 3px #fff;
     border-radius: 5px;
 }
