@@ -26,11 +26,12 @@
     padding: 0.05rem 2rem;
     color: #000;
     background-color: #c5c2c2;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .news-content {
     padding: 1rem;
+    min-width: 70%;
 }
 
 .one {
@@ -46,4 +47,10 @@
 .three {
     background-image: url('../img/news-1.jpg');
 
+}
+
+@media (max-width: 600px) {
+    .news-mini-card {
+        width: 90%;
+    }
 }
