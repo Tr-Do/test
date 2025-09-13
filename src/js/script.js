@@ -2,6 +2,7 @@
 (function () {
     function start() {
         const el = document.getElementById('calendar');
+        if (!el) return;
         const lib = window.VanillaCalendarPro;
         if (!el || !lib) return;
         if (el.__vc_instance) return;
@@ -31,3 +32,10 @@ window.addEventListener('scroll', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const imgs = document.querySelectorAll('.team-img');
+    imgs.forEach(img => {
+        img.addEventListener('mouseenter', () => console.log('mouse enter'));
+        img.addEventListener('mouseleave', () => console.log('leave'));
+    })
+});

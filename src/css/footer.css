@@ -38,6 +38,12 @@
     text-decoration: none;
 }
 
+.socials a img {
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
 .useful-links a:hover,
 .resource-links a:hover {
     color: #00a2ff;

@@ -3,7 +3,7 @@
         {% for i in team %}
         <div class="col-12 col-lg-4">
             <div class="member position-relative text-center">
-                <img src="{{i.img | url}}" alt="" class="rounded-circle">
+                <img src="{{i.img | url}}" alt="" class="rounded-circle team-img">
                 <h2 class="h4 text-white mt-3 mb-1">{{i.name}}</h2>
                 <p class="text-secondary mb-1">{{i.role}}</p>
                 <a href="mailto:{{i.email}}">{{i.email}}</a>
