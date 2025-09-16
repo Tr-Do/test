@@ -9,17 +9,9 @@
     border-radius: 5px;
 }
 
-.about-socials {
-    background-color: #00a2ff;
-}
-
 @media (min-width: 1200px) {
     .about-content {
         height: auto;
         width: 100%;
-    }
-
-    .about-socials a {
-        margin: 0.25rem 0.5rem;
     }
 }
