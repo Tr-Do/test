@@ -2,27 +2,15 @@
   <div class="events-col" aria-label="Upcoming events">
     <h2 class="events-title">Upcoming events</h2>
     <ul class="events-list">
+      {% for i in event %}
       <li>
-        <time datetime="2025-09-05">Sep 05</time>
-        <div class="event-body">
-          <strong>Risk Management</strong>
-          <span>STEM Building, Room 256</span>
+        <time class="text-center" datetime="{{ i.date }}">{{ i.date }} {{i.hour}}</time>
+        <div class=" event-body">
+          <strong>{{ i.name }}</strong>
+          <span>{{ i.location }}</span>
         </div>
       </li>
-      <li>
-        <time datetime="2025-09-18">Sep 18</time>
-        <div class="event-body">
-          <strong>Resume Workshop</strong>
-          <span>Classroom Hall, Room 110</span>
-        </div>
-      </li>
-      <li>
-        <time datetime="2025-09-25">Sep 25</time>
-        <div class="event-body">
-          <strong>Tech Talk: Cryptocurrency</strong>
-          <span>Stem Building, Room 120</span>
-        </div>
-      </li>
+      {% endfor %}
     </ul>
   </div>
   <div class="calendar-col">

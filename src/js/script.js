@@ -31,11 +31,3 @@ window.addEventListener('scroll', () => {
         nav.classList.add('bg-transparent');
     }
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-    const imgs = document.querySelectorAll('.team-img');
-    imgs.forEach(img => {
-        img.addEventListener('mouseenter', () => console.log('mouse enter'));
-        img.addEventListener('mouseleave', () => console.log('leave'));
-    })
-});
