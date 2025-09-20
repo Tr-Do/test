@@ -26,21 +26,32 @@ ACM-TAMUSA is Texas A&M University-San Antonio's leading computing-focused stude
 ### Technologies
 This website is developed using HTML, CSS, and JavaScript.
 ### Running the project
-To view this project, it is recommended to use [Visual Studio Code](https://code.visualstudio.com/) and the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extention.
+To view this project, it is recommended to use [Visual Studio Code](https://code.visualstudio.com/)
 
 1. Clone this project onto your local machine
-2. Open the cloned repository folder using Visual Studio Code
-3. Ensure that the "Live Server" plugin is installed, and open the file `index.html` with Live Server
-4. On your web browser, navigate to [http://localhost:5500/](http://localhost:5500/)
+2. In the repo directory, type this command
+```npm start```
+3. On the web browser, go to http://localhost:8080
 
 You should now be able to view the website. 
 
 ## Contributing
 If you would like to contribute to this project, please refer to the repository's [contributing guide]().
 ### Contributors
-<a href="https://github.com/LiliMartinez23/acm/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=LiliMartinez23/acm" />
-</a>
+<script>
+fetch('https://api.github.com/repos/LiliMartinez23/acm/contributors')
+  .then(r => r.json())
+  .then(data => {
+    const container = document.getElementById('contributors');
+    container.innerHTML = data.map(user => `
+      <a href="${user.html_url}" target="_blank" rel="noopener noreferrer">
+        <img src="${user.avatar_url}" alt="${user.login}" width="80" height="80"
+             style="border-radius:50%;margin:4px">
+      </a>
+    `).join('');
+  })
+  .catch(err => console.error('Failed to load contributors', err));
+</script>
 
 Made with [contrib.rocks](https://contrib.rocks).
 ## Contact
