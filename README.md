@@ -38,20 +38,9 @@ You should now be able to view the website.
 ## Contributing
 If you would like to contribute to this project, please refer to the repository's [contributing guide]().
 ### Contributors
-<script>
-fetch('https://api.github.com/repos/LiliMartinez23/acm/contributors')
-  .then(r => r.json())
-  .then(data => {
-    const container = document.getElementById('contributors');
-    container.innerHTML = data.map(user => `
-      <a href="${user.html_url}" target="_blank" rel="noopener noreferrer">
-        <img src="${user.avatar_url}" alt="${user.login}" width="80" height="80"
-             style="border-radius:50%;margin:4px">
-      </a>
-    `).join('');
-  })
-  .catch(err => console.error('Failed to load contributors', err));
-</script>
+<a href="https://github.com/LiliMartinez23/acm/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=LiliMartinez23/acm" />
+</a>
 
 Made with [contrib.rocks](https://contrib.rocks).
 ## Contact
