@@ -35,4 +35,5 @@ jobs:
           # this line is needed for the action to be able to push something to your repository
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          publish_branch: gh-pages
           enable_jekyll: false
