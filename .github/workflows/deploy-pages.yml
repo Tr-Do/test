@@ -8,6 +8,8 @@ on:
     branches: [ "main" ]
   # make it possible to trigger manually, useful for debugging
   workflow_dispatch: 
+permissions:
+  contents: write
 
 # what should be done
 jobs:
